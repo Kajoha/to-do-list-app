@@ -1,0 +1,37 @@
+.btn {
+  background-color: $blue-main;
+  border: 3px solid $blue-main;
+  border-radius: 3rem;
+  color: $white;
+  display: flex;
+  flex-direction: column;
+  font-family: $secondary-typo;
+  font-size: $typo-s;
+  font-weight: 600;
+  justify-content: center;
+  margin: 0 auto;
+  margin-top: 50px;
+  padding: 8px 40px;
+  text-transform: capitalize;
+
+  &:active {
+    background: none;
+    border: 3px solid $blue-main;
+    color: $blue-main;
+  }
+
+  @media (min-width: 1080px) {
+    font-size: $typo-s + 0.1;
+
+    &:hover {
+      background: none;
+      border: 3px solid $blue-main;
+      color: $blue-main;
+    }
+
+    &:active {
+      background: $blue-main;
+      color: $white;
+    }
+   }
+}
