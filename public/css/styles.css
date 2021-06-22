@@ -1,0 +1,9 @@
+html {
+  margin: 0;
+  font-size: 10px; }
+
+.wrapper {
+  width: 41.5rem; }
+  @media (min-width: 1080px) {
+    .wrapper {
+      width: 60rem; } }
