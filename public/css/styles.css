@@ -176,37 +176,32 @@ ul, li {
       overflow-x: hidden; } }
 
 .filter_btn {
-  align-self: flex-end;
   border: none;
   border-radius: 3rem;
   color: #F7F6F2;
   font-family: "Poppins", sans-serif;
   font-size: 1.5rem;
   font-weight: 600;
-  text-transform: capitalize;
+  margin: 0 2.5rem 20px 0;
   padding: 65px 30px 10px 30px;
-  margin: 0 2.5rem 20px 0; }
+  text-transform: capitalize; }
 
 .filter__study {
   background: #AC13AF;
-  background-image: url(../../img/study.svg);
-  background-repeat: no-repeat;
-  background-position: 50% 20%; }
+  background-image: url(../../img/study.svg); }
 
 .filter__chores {
   background: #7660F8;
-  background-image: url(../../img/chores.svg);
-  background-repeat: no-repeat;
-  background-position: 50% 20%; }
+  background-image: url(../../img/chores.svg); }
 
 .filter__sports {
   background: #F93283;
-  background-image: url(../../img/sports.svg);
-  background-repeat: no-repeat;
-  background-position: 50% 20%; }
+  background-image: url(../../img/sports.svg); }
 
 .filter__work {
   background: #3323C4;
-  background-image: url(../../img/works.svg);
+  background-image: url(../../img/works.svg); }
+
+.filter__image {
   background-repeat: no-repeat;
   background-position: 50% 20%; }
