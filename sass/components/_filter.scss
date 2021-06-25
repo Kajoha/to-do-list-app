@@ -1,0 +1,58 @@
+$colorList: $purple, $lila, $blue-main, $pink;
+
+.filter {
+  display: flex;
+  overflow-x: scroll;
+
+  @media (min-width: 1080px) {
+    justify-content: space-around;
+    overflow-x: hidden;
+  }
+}
+
+.filter_btn {
+  align-self: flex-end;
+  border: none;
+  border-radius: 3rem;
+  color: $white;
+  font-family: $secondary-typo;
+  font-size: $typo-s;
+  font-weight: 600;
+  text-transform: capitalize;
+  padding: 65px 30px 10px 30px;
+  margin: 0 $typo-l 20px 0;
+}
+
+.filter__study {
+  background: $purple;
+  background-image: url(../../img/study.svg);
+  background-repeat: no-repeat;
+  background-position: 50% 20%;
+}
+.filter__chores{
+  background: $lila;
+  background-image: url(../../img/chores.svg);
+  background-repeat: no-repeat;
+  background-position: 50% 20%;
+}
+.filter__sports {
+  background: $pink;
+  background-image: url(../../img/sports.svg);
+  background-repeat: no-repeat;
+  background-position: 50% 20%;
+}
+.filter__work {
+  background: $blue-main;
+  background-image: url(../../img/works.svg);
+  background-repeat: no-repeat;
+  background-position: 50% 20%;
+}
+
+// @each $color in $colorList {
+//   button{
+//     background-color: $color;
+//     background-image: url(../../img/study.svg);
+//     background-repeat: no-repeat;
+//     background-position: 50% 20%;
+//   }
+// }
