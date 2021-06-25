@@ -1,6 +1,14 @@
+// Typografic
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+$main-typo: 'Montserrat', sans-serif;
+$secondary-typo: 'Poppins', sans-serif;
+
 // Colors
 
-$white: #78D8E8;
+$white: #F7F6F2;
 $blue-main: #3323C4;
 $turquois: #78D8E8;
 $yellow: #FBC100;
@@ -8,7 +16,7 @@ $pink: #F93283;
 $purple: #AC13AF;
 $lila: #7660F8;
 
-// Typography
+// Size-Typography
 
 $size: 1rem;
 
@@ -20,5 +28,5 @@ $typo-x: $size * 3;
 
 // wrapper
 
-$wrapper: $size * 41.5;
+$wrapper: $size * 35;
 $desktop-wrapper: $size * 60;
