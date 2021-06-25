@@ -4,6 +4,15 @@ html {
   font-family: $main-typo;
 }
 
+body {
+  background: $white
+}
+
+ul, li {
+  padding: 0px;
+}
+
+
 .wrapper {
   width: $wrapper;
   margin: 0 auto;

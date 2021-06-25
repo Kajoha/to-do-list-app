@@ -1,0 +1,116 @@
+.list {
+  font-family: $secondary-typo;
+  line-height: 2.5rem;
+  text-transform: capitalize;
+
+  @media (min-width: 1080px) {
+    margin: 10px auto;
+    width: 80%;
+  }
+}
+
+.task {
+  align-items: center;
+  background: white;
+  border-radius: 2rem;
+  box-shadow: 1px 20px 40px -1px #D3D4D5;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  list-style: none;
+  margin-bottom: $typo-m;
+  padding: $typo-s 0 $typo-s 5rem;
+  position: relative;
+
+  input[type="checkbox"]:checked + label {
+    color: #999;
+    cursor: pointer;
+    text-decoration: line-through;
+
+    &::before {
+      content: "✓";
+      color: $yellow;
+      font-size: 40px;
+      left: 2rem;
+      position: absolute;
+      top: 35px;
+    }
+  }
+}
+
+
+.task__checkbox {
+  display: none;
+}
+
+.task__container {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.task__container--h3 {
+  font-size: $typo-m;
+  font-weight: 600;
+  
+  &::before {
+    background: transparent;
+    border: 3px solid black;
+    border-radius: 8px;
+    content: '';
+    cursor: pointer;
+    display: inline-block;
+    height: 30px;
+    left: 2rem;
+    margin-right: 20px;
+    text-align: center;
+    vertical-align: middle;
+    width: 30px;
+    position: absolute;
+    top: 35px;
+  }
+}
+
+.task__container--p {
+  font-size: $typo-s;
+}
+
+.task__container--span {
+  border: 2px solid $lila;
+  border-radius : 1rem;
+  font-size: $typo-xs;
+  padding: 0 0.8rem;
+  width: 25%;
+}
+
+.list__state {
+  display: flex;
+  flex-direction: column;
+  margin-left: 5rem;
+  width: 10%;
+}
+
+.list__state--edit {
+  background-image: url(../../img/edit.svg);
+  cursor: pointer;
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.list__state--delete {
+  background-image: url(../../img/delete.svg);
+  cursor: pointer;
+  font-size: 2rem;
+}
+
+.hidden {
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-size: 30px 15px;
+  border: none;
+  overflow: hidden;
+  padding: 0;
+  text-indent: 100%;
+  white-space: nowrap;
+}
