@@ -1,0 +1,28 @@
+.header {
+  margin: 4rem 0 4rem 0;
+  position: relative;
+}
+
+.header_title {
+    color: $blue-main;
+    display: inline-block;
+    font-size: $typo-x;
+    font-weight: 900;
+    left: 0;
+    line-height: $typo-x;
+    margin: 0;
+    position: absolute;
+    text-transform: uppercase;
+    top: 1.2rem;
+}
+
+.header_img {
+  display: inline-block;
+  position: absolute;
+  left: 28rem;
+  top: 1rem;
+
+  @media (min-width: 1080px) {
+    left: 54rem;;
+   }
+}
