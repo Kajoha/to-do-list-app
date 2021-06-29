@@ -1,10 +1,10 @@
 class AddTask {
-  constructor(id, name, select, time) {
+  constructor(id, name, time, optionSelect) {
     this.id = id;
     this.name = name;
-    this.select = select;
     this.complete = false;
     this.time = time;
+    this.value = optionSelect;
   }
 
   addTaskDOM() {
@@ -15,10 +15,11 @@ class AddTask {
       <div class="task__container">
         <input class="task__checkbox"id="${this.id}" type="checkbox">
         <label class="task__container--h3" for="${this.id}">${this.name}</label>
-        <label class="task__container--p" for="">1h ago</label>
-        <span class="task__container--span">${this.select}</span>
+        <label class="task__container--p" for=""></label>
+        <span class="task__container--span">${this.value}</span>
       </div>
-      
+
+
       <div class="list__state">
         <button class="list__state--edit hidden">Edit</button>
         <button class="list__state--delete hidden">Borrar</button>
@@ -31,3 +32,4 @@ class AddTask {
 }
 
 export default AddTask;
+
