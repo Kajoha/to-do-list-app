@@ -9,7 +9,6 @@ class AddTask {
 
   addTaskDOM() {
     const taskList = document.querySelector('ul');
-    console.log(taskList);
 
     const content = `
     <li class="task">
@@ -19,6 +18,7 @@ class AddTask {
         <label class="task__container--p" for=""></label>
         <span class="task__container--span">${this.value}</span>
       </div>
+
 
       <div class="list__state">
         <button class="list__state--edit hidden">Edit</button>
@@ -32,3 +32,4 @@ class AddTask {
 }
 
 export default AddTask;
+

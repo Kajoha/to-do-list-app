@@ -1,1 +1,235 @@
-﻿@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap");html{margin:0;font-size:10px;font-family:"Montserrat",sans-serif}body{background:#F7F6F2}ul,li{padding:0px}.wrapper{width:35rem;margin:0 auto}@media (min-width: 1080px){.wrapper{width:60rem}}.btn{background-color:#3323C4;border:3px solid #3323C4;border-radius:3rem;color:#F7F6F2;display:flex;flex-direction:column;font-family:"Poppins",sans-serif;font-size:1.5rem;font-weight:600;justify-content:center;margin:0 auto;margin-top:50px;padding:8px 40px;text-transform:capitalize}.btn:active{background:none;border:3px solid #3323C4;color:#3323C4}@media (min-width: 1080px){.btn{font-size:1.6rem}.btn:hover{background:none;border:3px solid #3323C4;color:#3323C4}.btn:active{background:#3323C4;color:#F7F6F2}}.input__label{margin:1rem;font-size:1.4rem}.input__input{background:#FBC100;border:none;border-radius:2rem;box-shadow:1px 20px 40px -1px rgba(235,235,235,0.57);color:black;font-size:1.5rem;margin:0.5rem 0 2rem;padding:15px 20px;width:88%}.input__input:focus,.input__input[type]:focus{border-color:#FBC100;outline:0 none}@media (min-width: 1080px){.input__input{width:93%}}.list{font-family:"Poppins",sans-serif;line-height:2.5rem;text-transform:capitalize}@media (min-width: 1080px){.list{margin:10px auto;width:80%}}.task{align-items:center;background:white;border-radius:2rem;box-shadow:1px 20px 40px -1px #D3D4D5;display:flex;flex-direction:row;flex-wrap:nowrap;justify-content:space-around;list-style:none;margin-bottom:2rem;padding:1.5rem 0 1.5rem 5rem;position:relative}.task input[type="checkbox"]:checked+label{color:#999;cursor:pointer;text-decoration:line-through}.task input[type="checkbox"]:checked+label::before{content:"✓";color:#FBC100;font-size:40px;left:2rem;position:absolute;top:35px}.task__checkbox{display:none}.task__container{display:flex;flex-direction:column}.task__container--h3{font-size:2rem;font-weight:600}.task__container--h3::before{background:transparent;border:3px solid black;border-radius:8px;content:'';cursor:pointer;display:inline-block;height:30px;left:2rem;margin-right:20px;text-align:center;vertical-align:middle;width:30px;position:absolute;top:35px}.task__container--p{font-size:1.5rem}.task__container--span{border:2px solid #7660F8;border-radius:1rem;font-size:1rem;padding:0 0.8rem;width:25%}.list__state{display:flex;flex-direction:column;margin-left:5rem;width:10%}.list__state--edit{background-image:url(../../img/edit.svg);cursor:pointer;font-size:2rem;margin-bottom:30px}.list__state--delete{background-image:url(../../img/delete.svg);cursor:pointer;font-size:2rem}.hidden{background-color:transparent;background-repeat:no-repeat;background-size:30px 15px;border:none;overflow:hidden;padding:0;text-indent:100%;white-space:nowrap}.filter{display:flex;padding-top:12rem;overflow-x:scroll}@media (min-width: 1080px){.filter{justify-content:space-around;overflow-x:hidden}}.filter_btn{border:none;border-radius:3rem;color:#F7F6F2;font-family:"Poppins",sans-serif;font-size:1.5rem;font-weight:600;margin:0 2.5rem 20px 0;padding:65px 30px 10px 30px;text-transform:capitalize}.filter__study{background:#AC13AF;background-image:url(../../img/study.svg)}.filter__chores{background:#7660F8;background-image:url(../../img/chores.svg)}.filter__sports{background:#F93283;background-image:url(../../img/sports.svg)}.filter__work{background:#3323C4;background-image:url(../../img/works.svg)}.filter__image{background-repeat:no-repeat;background-position:50% 20%}.header{margin:4rem 0 4rem 0;position:relative}.header_title{color:#3323C4;display:inline-block;font-size:3rem;font-weight:900;left:0;line-height:3rem;margin:0;position:absolute;text-transform:uppercase;top:1.2rem}.header_img{display:inline-block;position:absolute;left:28rem;top:1rem}@media (min-width: 1080px){.header_img{left:54rem}}.dropdown{background:#FFFFFF;border-radius:2rem;box-shadow:.3rem 2rem 4rem -1px #D3D4D5;height:5rem;margin-top:2rem;width:35rem}@media (min-width: 1080px){.dropdown{width:60rem}}.dropdown__arrow{background-image:url(./../../img/arrow.svg);background-repeat:no-repeat;height:2rem;width:4rem}.dropdown__arrow--right{float:right;margin-right:.7rem;transition:transform .3s}.dropdown__arrow--rotate{transform:rotate(90deg)}.dropdown__hide{max-height:0 !important}.dropdown_icon{height:3rem;margin:0 1.5rem 0 1.5rem;width:2.5rem}.dropdown__option{max-height:40rem;overflow:hidden;transition:max-height .5s ease-out;width:35rem}@media (min-width: 1080px){.dropdown__option{width:60rem}}.dropdown__option--element{align-items:flex-start;background:#FFFFFF;box-shadow:.3rem 2rem 4rem -1px #D3D4D5;display:inline-flex;font-size:1.5rem;height:4rem;margin-bottom:.7rem;padding-top:1rem;text-align:start;width:35rem}@media (min-width: 1080px){.dropdown__option--element{width:60rem}}.dropdown__option--element:hover{background:rgba(0,0,0,0.2)}.dropdown__option--element-first{border-radius:2rem 2rem 0 0}.dropdown__option--element-end{border-radius:0 0 2rem 2rem}.dropdown_pointer:hover{cursor:pointer}.dropdown__select{font-size:2rem;font-weight:500;margin-bottom:2rem;padding:1.2rem 0 0 0.5rem}
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap");
+html {
+  margin: 0;
+  font-size: 10px;
+  font-family: "Montserrat", sans-serif; }
+
+body {
+  background: #F7F6F2; }
+
+ul, li {
+  padding: 0px; }
+
+.wrapper {
+  width: 35rem;
+  margin: 0 auto; }
+  @media (min-width: 1080px) {
+    .wrapper {
+      width: 60rem; } }
+
+.btn {
+  background-color: #3323C4;
+  border: 3px solid #3323C4;
+  border-radius: 3rem;
+  color: #F7F6F2;
+  display: flex;
+  flex-direction: column;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  justify-content: center;
+  margin: 0 auto;
+  margin-top: 50px;
+  padding: 8px 40px;
+  text-transform: capitalize; }
+  .btn:active {
+    background: none;
+    border: 3px solid #3323C4;
+    color: #3323C4; }
+  @media (min-width: 1080px) {
+    .btn {
+      font-size: 1.6rem; }
+      .btn:hover {
+        background: none;
+        border: 3px solid #3323C4;
+        color: #3323C4; }
+      .btn:active {
+        background: #3323C4;
+        color: #F7F6F2; } }
+
+.input__label {
+  margin: 1rem;
+  font-size: 1.4rem; }
+
+.input__input {
+  background: #FBC100;
+  border: none;
+  border-radius: 2rem;
+  box-shadow: 1px 20px 40px -1px rgba(235, 235, 235, 0.57);
+  color: black;
+  font-size: 1.5rem;
+  margin: 0.5rem 0 2rem;
+  padding: 15px 20px;
+  width: 88%; }
+  .input__input:focus, .input__input[type]:focus {
+    border-color: #FBC100;
+    outline: 0 none; }
+  @media (min-width: 1080px) {
+    .input__input {
+      width: 93%; } }
+
+.list {
+  font-family: "Poppins", sans-serif;
+  line-height: 2.5rem;
+  text-transform: capitalize; }
+  @media (min-width: 1080px) {
+    .list {
+      margin: 10px auto;
+      width: 80%; } }
+
+.task {
+  align-items: center;
+  background: white;
+  border-radius: 2rem;
+  box-shadow: 1px 20px 40px -1px #D3D4D5;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  list-style: none;
+  margin-bottom: 2rem;
+  padding: 1.5rem 0 1.5rem 5rem;
+  position: relative; }
+  .task input[type="checkbox"]:checked + label {
+    color: #999;
+    cursor: pointer;
+    text-decoration: line-through; }
+    .task input[type="checkbox"]:checked + label::before {
+      content: "✓";
+      color: #FBC100;
+      font-size: 40px;
+      left: 2rem;
+      position: absolute;
+      top: 35px; }
+
+.task__checkbox {
+  display: none; }
+
+.task__container {
+  display: flex;
+  flex-direction: column; }
+
+.task__container--h3 {
+  flex-wrap: nowrap;
+  font-size: 2rem;
+  font-weight: 600; }
+  .task__container--h3::before {
+    background: transparent;
+    border: 3px solid black;
+    border-radius: 8px;
+    content: '';
+    cursor: pointer;
+    display: inline-block;
+    height: 30px;
+    left: 2rem;
+    margin-right: 20px;
+    text-align: center;
+    vertical-align: middle;
+    width: 30px;
+    position: absolute;
+    top: 35px; }
+
+.task__container--p {
+  font-size: 1.5rem; }
+
+.task__container--span {
+  border: 2px solid #7660F8;
+  border-radius: 1rem;
+  font-size: 1rem;
+  padding: 0 0.8rem;
+  width: 30px; }
+
+.list__state {
+  display: flex;
+  flex-direction: column;
+  margin-left: 5rem;
+  width: 10%; }
+
+.list__state--edit {
+  background-image: url(../../img/edit.svg);
+  cursor: pointer;
+  font-size: 2rem;
+  margin-bottom: 30px; }
+
+.list__state--delete {
+  background-image: url(../../img/delete.svg);
+  cursor: pointer;
+  font-size: 2rem; }
+
+.hidden {
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-size: 30px 15px;
+  border: none;
+  overflow: hidden;
+  padding: 0;
+  text-indent: 100%;
+  white-space: nowrap; }
+
+.filter {
+  display: flex;
+  padding-top: 12rem;
+  overflow-x: scroll; }
+  @media (min-width: 1080px) {
+    .filter {
+      justify-content: space-around;
+      overflow-x: hidden; } }
+
+.filter_btn {
+  border: none;
+  border-radius: 3rem;
+  color: #F7F6F2;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 0 2.5rem 20px 0;
+  padding: 65px 30px 10px 30px;
+  text-transform: capitalize; }
+
+.filter__study {
+  background: #AC13AF;
+  background-image: url(../../img/study.svg); }
+
+.filter__chores {
+  background: #7660F8;
+  background-image: url(../../img/chores.svg); }
+
+.filter__sports {
+  background: #F93283;
+  background-image: url(../../img/sports.svg); }
+
+.filter__work {
+  background: #3323C4;
+  background-image: url(../../img/works.svg); }
+
+.filter__image {
+  background-repeat: no-repeat;
+  background-position: 50% 20%; }
+
+.header {
+  margin: 4rem 0 4rem 0;
+  position: relative; }
+
+.header_title {
+  color: #3323C4;
+  display: inline-block;
+  font-size: 3rem;
+  font-weight: 900;
+  left: 0;
+  line-height: 3rem;
+  margin: 0;
+  position: absolute;
+  text-transform: uppercase;
+  top: 1.2rem; }
+
+.header_img {
+  display: inline-block;
+  position: absolute;
+  left: 28rem;
+  top: 1rem; }
+  @media (min-width: 1080px) {
+    .header_img {
+      left: 54rem; } }
