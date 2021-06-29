@@ -51,6 +51,7 @@
 
 
 .task__container--h3 {
+  flex-wrap: nowrap; 
   font-size: $typo-m;
   font-weight: 600;
   
@@ -81,6 +82,7 @@
   border-radius : 1rem;
   font-size: $typo-xs;
   padding: 0 0.8rem;
+  width: 30px;
 }
 
 .list__state {

@@ -112,6 +112,7 @@ ul, li {
   flex-direction: column; }
 
 .task__container--h3 {
+  flex-wrap: nowrap;
   font-size: 2rem;
   font-weight: 600; }
   .task__container--h3::before {
@@ -137,7 +138,8 @@ ul, li {
   border: 2px solid #7660F8;
   border-radius: 1rem;
   font-size: 1rem;
-  padding: 0 0.8rem; }
+  padding: 0 0.8rem;
+  width: 30px; }
 
 .list__state {
   display: flex;
