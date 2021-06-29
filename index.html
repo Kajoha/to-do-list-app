@@ -1,13 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>To Do List</title>
   <link rel="stylesheet" href="public/css/styles.css">
 </head>
+
 <body>
   <div class="wrapper">
+
+    <div class="header">
+      <h1 class="header_title">to do list</h1>
+      <img class="header_img" src="./img/logo.png" alt="">
+    </div>
 
     <div class="filter">
       <button class="filter__study filter_btn filter__image">study</button>
@@ -16,7 +23,7 @@
       <button class="filter__work filter_btn filter__image">works</button>
     </div>
 
-    <form class="input"> 
+    <form class="input">
       <label class="input__label">Enter a task</label>
       <input class="input__input" type="text">
 
@@ -30,14 +37,15 @@
       <button class="btn">Add Task</button>
     </form>
 
-    <ul class="list"> 
+    <ul class="list">
 
     </ul>
-  
+
     <button class="btn">New Taks</button>
 
   </div>
 
   <script src="js/script.js" type="module"></script>
 </body>
+
 </html
