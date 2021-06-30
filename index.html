@@ -23,54 +23,59 @@
       <button class="filter__work filter_btn filter__image">works</button>
     </div>
 
-    <form class="input">
-      <label class="input__label">Enter a task</label>
-      <input class="input__input" type="text">
+    <div class="modal">
+      <div class="wrapper">
 
-      <button class="btn">Add Task</button>
-    </form>
+        <div class="header">
+          <h1 class="header_title">to do list</h1>
+          <img class="header_img" src="./img/logo.png" alt="">
+        </div>
+
+        <form class="input input__modal">
+          <label class="input__label">Enter a task</label>
+          <input class="input__input" type="text">
+
+          <div class='dropdown'>
+            <div class='dropdown__select dropdown__pointer'>Select an option
+              <i class="fa dropdown__arrow--right dropdown__arrow"></i>
+            </div>
+
+            <div class='dropdown__option dropdown__pointer dropdown__hide'>
+
+              <div class='dropdown__option--element dropdown__option--element-first' data-value='chores'><img
+                  src="./img/icon-chores.svg" class="dropdown_icon" alt=""> Chores</div>
+              <div class='dropdown__option--element' data-value='sports'><img src="./img/icon-sport.svg"
+                  class="dropdown_icon" alt="">
+                Sports</div>
+              <div class='dropdown__option--element' data-value='works'><img src="./img/icon-works.svg"
+                  class="dropdown_icon" alt="">
+                Works</div>
+              <div class='dropdown__option--element dropdown__option--element-end' data-value='study'><img
+                  src="./img/icon-study.svg" class="dropdown_icon" alt="">
+                Study</div>
+
+            </div>
+          </div>
+
+          <button class="btn js-modal__close modal__btn">Add Task</button>
+        </form>
+
+
+      </div>
+    </div>
 
     <ul class="list">
-      <li class="task">
-        <div class="task__container">
-          <input class="task__checkbox" id="check" type="checkbox">
-          <label class="task__container--h3" for="check">JavaScript</label>
-          <label class="task__container--p" for="">1 hour ago</label>
-          <span class="task__container--span">study</span>
-        </div>
 
-        <div class="list__state">
-          <button class="list__state--edit hidden">Edit</button>
-          <button class="list__state--delete hidden">Borrar</button>
-        </div>
-      </li>
     </ul>
 
-    <button class="btn">New Taks</button>
-
-
-    <div class='dropdown'>
-      <div class='dropdown__select dropdown__pointer'>Select an option<i
-          class="fa dropdown__arrow--right dropdown__arrow"></i></div>
-
-      <div class='dropdown__option dropdown__pointer dropdown__hide'>
-        <div class='dropdown__option--element dropdown__option--element-first' id='chores'><img
-            src="./img/icon-chores.svg" class="dropdown_icon" alt=""> Chores</div>
-        <div class='dropdown__option--element' id='sports'><img src="./img/icon-sport.svg" class="dropdown_icon" alt="">
-          Sports</div>
-        <div class='dropdown__option--element' id='works'><img src="./img/icon-works.svg" class="dropdown_icon" alt="">
-          Works</div>
-        <div class='dropdown__option--element dropdown__option--element-end' id='study'><img src="./img/icon-study.svg"
-            class="dropdown_icon" alt="">
-          Study</div>
-      </div>
-
-    </div>
+    <button class="btn js-modal__open">New Taks</button>
 
 
   </div>
+  <script src="js/modal.js"></script>
   <script src="js/dropDown.js"></script>
-  <script src="js/script.js"></script>
+  <script type="module" src="js/script.js"></script>
+
 </body>
 
-</html
+</html>
