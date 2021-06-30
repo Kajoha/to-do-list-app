@@ -23,41 +23,56 @@
       <button class="filter__work filter_btn filter__image">works</button>
     </div>
 
-    <form class="input">
-      <label class="input__label">Enter a task</label>
-      <input class="input__input" type="text">
-      
-      <div class='dropdown'>
-        <div class='dropdown__select dropdown__pointer'>Select an option<i
-            class="fa dropdown__arrow--right dropdown__arrow"></i></div>
+    <div class="modal">
+      <div class="wrapper">
 
-        <div class='dropdown__option dropdown__pointer dropdown__hide'>
-          <div class='dropdown__option--element dropdown__option--element-first' data-value='chores'><img
-              src="./img/icon-chores.svg" class="dropdown_icon" alt=""> Chores</div>
-          <div class='dropdown__option--element' data-value='sports'><img src="./img/icon-sport.svg"
-              class="dropdown_icon" alt="">
-            Sports</div>
-          <div class='dropdown__option--element' data-value='works'><img src="./img/icon-works.svg"
-              class="dropdown_icon" alt="">
-            Works</div>
-          <div class='dropdown__option--element dropdown__option--element-end' data-value='study'><img
-              src="./img/icon-study.svg" class="dropdown_icon" alt="">
-            Study</div>
+        <div class="header">
+          <h1 class="header_title">to do list</h1>
+          <img class="header_img" src="./img/logo.png" alt="">
         </div>
+
+        <form class="input input__modal">
+          <label class="input__label">Enter a task</label>
+          <input class="input__input" type="text">
+
+          <div class='dropdown'>
+            <div class='dropdown__select dropdown__pointer'>Select an option
+              <i class="fa dropdown__arrow--right dropdown__arrow"></i>
+            </div>
+
+            <div class='dropdown__option dropdown__pointer dropdown__hide'>
+
+              <div class='dropdown__option--element dropdown__option--element-first' data-value='chores'><img
+                  src="./img/icon-chores.svg" class="dropdown_icon" alt=""> Chores</div>
+              <div class='dropdown__option--element' data-value='sports'><img src="./img/icon-sport.svg"
+                  class="dropdown_icon" alt="">
+                Sports</div>
+              <div class='dropdown__option--element' data-value='works'><img src="./img/icon-works.svg"
+                  class="dropdown_icon" alt="">
+                Works</div>
+              <div class='dropdown__option--element dropdown__option--element-end' data-value='study'><img
+                  src="./img/icon-study.svg" class="dropdown_icon" alt="">
+                Study</div>
+
+            </div>
+          </div>
+
+          <button class="btn js-modal__close modal__btn">Add Task</button>
+        </form>
+
+
       </div>
-
-
-      <button class="btn">Add Task</button>
-    </form>
+    </div>
 
     <ul class="list">
 
     </ul>
 
-    <button class="btn">New Taks</button>
+    <button class="btn js-modal__open">New Taks</button>
 
 
   </div>
+  <script src="js/modal.js"></script>
   <script src="js/dropDown.js"></script>
   <script type="module" src="js/script.js"></script>
 
