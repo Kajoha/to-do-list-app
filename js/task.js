@@ -32,4 +32,3 @@ class AddTask {
 }
 
 export default AddTask;
-

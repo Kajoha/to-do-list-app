@@ -43,3 +43,11 @@ taskListUl.addEventListener('click', (event) => {
 });
 
 saveLocal();
+
+function filterSelected(e) {
+  console.log(e.target.value);
+}
+
+const filterTaks = document.querySelectorAll('.filter_btn');
+
+filterTaks.forEach((option) => option.addEventListener('click', filterSelected));
