@@ -1,3 +1,5 @@
+import {taskList} from './script.js'
+
 class AddTask {
   constructor(id, name, time, optionSelect) {
     this.id = id;
@@ -8,7 +10,7 @@ class AddTask {
   }
 
   addTaskDOM() {
-    const taskList = document.querySelector('ul');
+    const taskListUl = document.querySelector('ul');
 
     const content = `
     <li class="task">
@@ -19,7 +21,6 @@ class AddTask {
         <span class="task__container--span">${this.value}</span>
       </div>
 
-
       <div class="list__state">
         <button class="list__state--edit hidden">Edit</button>
         <button class="list__state--delete hidden">Borrar</button>
@@ -27,7 +28,18 @@ class AddTask {
     </li>
     `;
 
-    taskList.innerHTML += content;
+    taskListUl.innerHTML += content;
+
+    let object = {
+      id : this.id,
+      name : this.name,
+      complete : this.complete,
+      time : this.time,
+      value : this.value,
+    }
+
+    taskList.push(object);
+    localStorage.setItem('tasks', JSON.stringify(taskList));
   }
 }
 

@@ -6,17 +6,21 @@ const input = document.querySelector('input');
 const taskListUl = document.querySelector('ul');
 const value = document.querySelectorAll('.dropdown__option--element');
 let taskList = [];
-let counterId = 1;
+let counterId = 0;
 let optionSelect = '';
+
+function count(id) {
+  return id + taskList.length;
+}
 
 form.addEventListener('submit', (event) => {
   event.preventDefault();
   const initailTime = event.timeStamp;
-  const task = new AddTask(counterId++, input.value, initailTime, optionSelect);
-  taskList.push(task);
+  // const getSecondsDiff = timestamp => (Date.now() - timestamp) / 1000;
+  // console.log(getSecondsDiff);
+  const taskId = count(counterId);
+  const task = new AddTask(taskId, input.value, initailTime, optionSelect);
   task.addTaskDOM();
-
-  localStorage.setItem('tasks', JSON.stringify(taskList));
   input.value = '';
 });
 
@@ -43,3 +47,7 @@ taskListUl.addEventListener('click', (event) => {
 });
 
 saveLocal();
+
+export {
+  taskList
+}
