@@ -16,10 +16,13 @@ function count(id) {
 form.addEventListener('submit', (event) => {
   event.preventDefault();
   const initailTime = event.timeStamp;
-  // const getSecondsDiff = timestamp => (Date.now() - timestamp) / 1000;
-  // console.log(getSecondsDiff);
+  const t = Math.floor(initailTime) / 1000;
+  
+  const timeFormat = timeSince(new Date(Date.now()-t));
+  console.log(timeFormat)
+
   const taskId = count(counterId);
-  const task = new AddTask(taskId, input.value, initailTime, optionSelect);
+  const task = new AddTask(taskId, input.value, timeFormat, optionSelect);
   task.addTaskDOM();
   input.value = '';
 });
@@ -47,6 +50,31 @@ taskListUl.addEventListener('click', (event) => {
 });
 
 saveLocal();
+
+function timeSince(time) {
+  
+  let initialTime = new Date();
+  let timeSeconds = (initialTime.getTime() - time.getTime()) / 1000;
+
+  const initialMinute = '0 minute ago';
+  const perMinute = `${Math.floor(timeSeconds/60)} minute ago`;
+  const perHour = `${Math.floor(timeSeconds/3600)} hours ago`;
+  const perDay = `${Math.floor(timeSeconds/86400)} days ago`;
+
+  if(timeSeconds < 60) {
+    return initialMinute;
+
+  } else if(timeSeconds < 3600) {
+    return perMinute;
+
+  } else if(timeSeconds <= 86400) {
+    return perHour;
+    
+  } else if(timeSeconds > 86400) {
+    return perDay;
+  }
+}
+
 
 export {
   taskList

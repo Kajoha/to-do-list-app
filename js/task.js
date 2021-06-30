@@ -17,7 +17,7 @@ class AddTask {
       <div class="task__container">
         <input class="task__checkbox"id="${this.id}" type="checkbox">
         <label class="task__container--h3" for="${this.id}">${this.name}</label>
-        <label class="task__container--p" for=""></label>
+        <label class="task__container--p" for="">${this.time}</label>
         <span class="task__container--span">${this.value}</span>
       </div>
 
