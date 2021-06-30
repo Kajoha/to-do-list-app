@@ -50,6 +50,12 @@ ul, li {
         background: #3323C4;
         color: #F7F6F2; } }
 
+.btn__delete {
+  background-color: #F7F6F2;
+  border: 3px solid #FBC100;
+  border-radius: 3rem;
+  color: #3323C4; }
+
 .input__label {
   margin: 1rem;
   font-size: 1.4rem; }
