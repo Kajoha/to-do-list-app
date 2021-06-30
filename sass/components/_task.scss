@@ -51,10 +51,10 @@
 
 
 .task__container--h3 {
-  flex-wrap: nowrap; 
+  flex-wrap: nowrap;
   font-size: $typo-m;
   font-weight: 600;
-  
+
   &::before {
     background: transparent;
     border: 3px solid black;

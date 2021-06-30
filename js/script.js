@@ -9,7 +9,6 @@ let taskList = [];
 let counterId = 1;
 let optionSelect = '';
 
-
 form.addEventListener('submit', (event) => {
   event.preventDefault();
   const initailTime = event.timeStamp;
@@ -21,9 +20,7 @@ form.addEventListener('submit', (event) => {
   input.value = '';
 });
 
-
 function data(e) {
-  console.log(e.target.dataset.value);
   const _value = e.target.dataset.value;
   optionSelect = _value;
 }
